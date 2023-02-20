@@ -23,5 +23,5 @@ test('Deve renderizar uam lista de link', () => {
    render(<Menu />);
    const links = screen.getAllByRole('link');
    links.forEach((link) => expect(link).toHaveClass('link'));
-   
+   expect(links).toMatchSnapshot();
 })
