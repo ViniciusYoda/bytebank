@@ -1,7 +1,7 @@
-import React from 'react';
-import estilos from './Transacao.module.css';
-import { ReactComponent as Ilustracao } from './ilustracao.svg';
-import Formulario from './Formulario';
+import React from "react";
+import estilos from "./Transacao.module.css";
+import { ReactComponent as Ilustracao } from "./ilustracao.svg";
+import Formulario from "./Formulario";
 
 export default function Transacao({ realizarTransacao }) {
   return (

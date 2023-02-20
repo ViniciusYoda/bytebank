@@ -1,11 +1,11 @@
-import React from 'react';
-import estilos from './Menu.module.css';
+import React from "react";
+import estilos from "./Menu.module.css";
 
 const listaMenu = [
-  'Inicial',
-  'Transferências',
-  'Investimentos',
-  'Outros serviços',
+  "Inicial",
+  "Transferências",
+  "Investimentos",
+  "Outros serviços",
 ];
 
 export default function Menu() {

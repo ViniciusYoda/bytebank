@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import estilos from './Formulario.module.css';
+import React, { useState } from "react";
+import estilos from "./Formulario.module.css";
 
 export default function Formulario({ realizarTransacao }) {
-  const [valor, setValor] = useState({ transacao: '', valor: '' });
+  const [valor, setValor] = useState({ transacao: "", valor: "" });
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -12,16 +12,16 @@ export default function Formulario({ realizarTransacao }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    const dataTransacao = new Date().toLocaleDateString('pt-br');
-    const mesTransacao = new Date().toLocaleDateString('pt-br', {
-      month: 'long',
+    const dataTransacao = new Date().toLocaleDateString("pt-br");
+    const mesTransacao = new Date().toLocaleDateString("pt-br", {
+      month: "long",
     });
     realizarTransacao({
       ...valor,
       data: dataTransacao,
       mes: mesTransacao[0].toUpperCase() + mesTransacao.substring(1),
     });
-    setValor({ ...valor, valor: '' });
+    setValor({ ...valor, valor: "" });
   }
 
   return (

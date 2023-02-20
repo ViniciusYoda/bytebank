@@ -1,6 +1,6 @@
-import React from 'react';
-import estilos from './Extrato.module.css';
-import Transacoes from './Transacoes';
+import React from "react";
+import estilos from "./Extrato.module.css";
+import Transacoes from "./Transacoes";
 
 export default function Extrato({ transacoes }) {
   return (

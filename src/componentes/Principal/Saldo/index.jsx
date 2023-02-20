@@ -1,6 +1,6 @@
-import React from 'react';
-import estilos from './Saldo.module.css';
-import { ReactComponent as Icone } from './icone-olho.svg';
+import React from "react";
+import estilos from "./Saldo.module.css";
+import { ReactComponent as Icone } from "./icone-olho.svg";
 
 export default function Saldo({ saldo }) {
   return (
